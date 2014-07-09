@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChoiceApp.iOS", "ChoiceApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChoiceApp.Android", "ChoiceApp\ChoiceApp.Android\ChoiceApp.Android.csproj", "{06A39DB7-1ADA-45D5-9978-4E4CA6CF3395}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "ChoiceApp.Shared", "ChoiceApp\ChoiceApp\ChoiceApp.Shared.shproj", "{B6522F2A-547F-46CC-89F8-7F6656170FA5}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ChoiceApp.Shared", "ChoiceApp\ChoiceApp\ChoiceApp.Shared.shproj", "{B6522F2A-547F-46CC-89F8-7F6656170FA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,7 +127,7 @@ Global
 		{A378A048-B2C0-4F31-9150-AD6342298D88}.Release|x86.ActiveCfg = Release|iPhone
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ChoiceApp\ChoiceApp.iOS\ChoiceApp.iOS.csproj
+		StartupItem = ChoiceApp\ChoiceApp.Android\ChoiceApp.Android.csproj
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ChoiceApp\ChoiceApp\ChoiceApp.projitems*{b6522f2a-547f-46cc-89f8-7f6656170fa5}*SharedItemsImports = 13

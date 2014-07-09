@@ -12,6 +12,8 @@ using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using ChoiceApp.Shared.Pages;
+using Xamarin.Auth;
+using ChoiceApp.Droid;
 
 [assembly: ExportRenderer(typeof(LoginPage), typeof(LoginPageRenderer))]
 namespace ChoiceApp.Droid
@@ -25,10 +27,10 @@ namespace ChoiceApp.Droid
             var activity = this.Context as Activity;
 
             var auth = new OAuth2Authenticator (
-                clientId: "", // your OAuth2 client id
+				clientId: "226855460778202", // your OAuth2 client id
                 scope: "", // the scopes for the particular API you're accessing, delimited by "+" symbols
-                authorizeUrl: new Uri (""), // the auth URL for the service
-                redirectUrl: new Uri ("")); // the redirect URL for the service
+				authorizeUrl: new Uri ("https://m.facebook.com/dialog/oauth/"),
+				redirectUrl: new Uri ("http://www.facebook.com/connect/login_success.html")); // the redirect URL for the service
 
             auth.Completed += (sender, eventArgs) => {
             if (eventArgs.IsAuthenticated) {

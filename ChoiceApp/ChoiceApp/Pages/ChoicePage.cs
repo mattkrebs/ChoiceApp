@@ -6,9 +6,9 @@ using Xamarin.Forms;
 
 namespace ChoiceApp.Shared.Pages
 {
-    public class ChoicePage : ContentPage
+    public class ChoicePage : BaseContentPage
     {
-        public ChoicePage(Choice choice1, Choice choice2)
+        public ChoicePage()
         {
             //Image image1 = new Image()
             //{

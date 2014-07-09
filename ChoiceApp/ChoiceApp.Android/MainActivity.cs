@@ -25,7 +25,7 @@ namespace ChoiceApp.Droid
         }
         static Page BuildView()
         {
-            return new RootPage();
+			return App.GetMainPage();
         }
     }
 }
