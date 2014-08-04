@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Create Choice";
+}
+
+<h2>Create Choice</h2>
+@using (Html.BeginForm("SaveChoice", "Home", FormMethod.Post)) { 
+    <input type="text" name="Name" placeholder="Name" />
+    <input type="text" name="Tags" placeholder="Tags" />
+    <input type="text" name="ImageUrl1" placeholder="Image 1 Url" />
+    <input type="text" name="ImageUrl2" placeholder="Image 2 Url" />
+    <input type="submit" value="Save" />
+    
+}
+
+
+

@@ -11,7 +11,7 @@ namespace ChoiceApp.Shared.Pages
 		{
 			base.OnAppearing ();
 			if (!App.IsLoggedIn) {
-				Navigation.PushModalAsync (new LoginPage ());
+				Navigation.PushModalAsync (new LoginOptions ());
 			}
 		}
 	}

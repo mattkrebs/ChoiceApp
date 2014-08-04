@@ -7,10 +7,11 @@ using Xamarin.Forms;
 
 namespace ChoiceApp.Shared.Pages
 {
-    public class RootPage : BaseContentPage
+    public class RootPage : ContentPage
     {
         public RootPage()
         {
+            Title = "Root Page";
 			Content = new Label () {
 				Text = "Profile Page",
 				VerticalOptions = LayoutOptions.CenterAndExpand,

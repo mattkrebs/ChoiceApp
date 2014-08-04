@@ -6,23 +6,29 @@ using Xamarin.Forms;
 
 namespace ChoiceApp.Shared.Pages
 {
-    public class ChoicePage : BaseContentPage
+    public class ChoicePage : ContentPage
     {
         public ChoicePage()
         {
-            //Image image1 = new Image()
-            //{
-            //     Source = ImageSource.FromUri(new Uri(choice1.Option1.ImageUrl))
-            //};
-            //Image image2 = new Image()
-            //{
-            //    Source = ImageSource.FromUri(new Uri(choice1.Option2.ImageUrl))
-            //};
+            this.SetBinding(ContentPage.TitleProperty, "Name");
+            Image image1 = new Image();
+            image1.SetBinding(Image.SourceProperty, "Option1.ImageUrl");
 
-            //this.Content = new StackLayout
-            //{
-            //    Children = { image1, image2 }
-            //};
+            Image image2 = new Image();
+            image2.SetBinding(Image.SourceProperty, "Option2.ImageUrl");
+
+            this.Content = new StackLayout
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                Children = 
+                        {
+                            image1, image2                           
+                            
+                        }
+            };
+           
         }
+       
     }
 }

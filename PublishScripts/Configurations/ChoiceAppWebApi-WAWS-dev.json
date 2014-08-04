@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "ChoiceWebApi",
+            "location": "North Central US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "ChoiceWebApi_db",
+                "serverName": "z69vbhbm00",
+                "user": "matt.krebs",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "North Central US"
+            }
+        ]
+    }
+}

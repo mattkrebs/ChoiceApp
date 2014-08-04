@@ -15,12 +15,24 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Option.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\OptionConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ChoiceListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ExternalLoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\RegisterExternalBindingModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ChoicePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ChoicesPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MasterPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\RootPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BaseContentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AuthenticationServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ChoiceServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IMobileClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ChoiceView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OptionView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\Views\" />
   </ItemGroup>
 </Project>

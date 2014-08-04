@@ -16,9 +16,12 @@ namespace ChoiceApp
 
         public static Page GetMainPage()
         {
-			var profilePage = new RootPage ();
-			_NavPage = new NavigationPage (profilePage);
-			return _NavPage;
+			var profilePage = new MasterDetailPage ();
+            profilePage.Master = new RootPage();
+
+			profilePage.Detail = new NavigationPage (new ChoicesPage());
+
+            return profilePage;
            
         }
 		public static bool IsLoggedIn{
